@@ -58,4 +58,11 @@ public class JournalControllerDb {
    {
        return "Koushik";
    }
+
+   @GetMapping("/greet")
+   public String greet()
+   {
+       return "Good morning";
+   }
+
 }
