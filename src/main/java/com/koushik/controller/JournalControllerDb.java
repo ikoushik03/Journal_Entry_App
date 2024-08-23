@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.util.*;
 
+
+
 @RestController
 @RequestMapping("/journal")
 public class JournalControllerDb {
@@ -49,5 +51,11 @@ public class JournalControllerDb {
        //journalEntryService.findById(id);
        journalEntryService.deleteJournal(id);
 
+   }
+
+   @GetMapping("/msg")
+   public String msg()
+   {
+       return "Koushik";
    }
 }
